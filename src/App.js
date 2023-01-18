@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginForm from "./Components/loginForm";
+import './App.css'
+import SearchSystem from "./Components/searchSystem";
+import ProductTable from "./Components/productTable";
+import { useState } from "react";
 
 function App() {
+
+  const [showinStock,setShowinStock] = useState(false)
+  const [searchText,setSearchText] = useState("")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <LoginForm />
+      </div>
+      <div className="App">
+        <SearchSystem checkbox={setShowinStock} setSearchText = {setSearchText}/>
+        <ProductTable showInStock={showinStock} compareText={searchText}/>
+      </div>
+    </>
   );
 }
 
 export default App;
+
+
+// create app using babel and react CDN

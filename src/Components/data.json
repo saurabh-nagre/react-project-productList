@@ -1,0 +1,44 @@
+{     
+    "products":[
+       {
+        "title":"Sporting Goods",
+        "items":
+        [   {
+                "name": "Football",
+                "price":"49.99",
+                "instock":true
+            },
+            {
+                "name": "Baseball",
+                "price": "9.99",
+                "instock": true
+            },
+            {
+                "name": "Basketball",
+                "price": "29.99",
+                "instock": false
+            }
+        ]
+       },
+       {
+        "title": "Electronics",
+        "items": [
+            {   
+                "name": "iPod Touch",
+                "price": "99.99",
+                "instock": true
+            },
+            {
+                "name": "iPhone 5",
+                "price": "399.99",
+                "instock": false
+            },
+            {
+                "name": "Nexus",
+                "price": "199.99",
+                "instock": true
+            }
+        ]
+       }
+    ]
+}
