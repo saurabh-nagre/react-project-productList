@@ -11,9 +11,9 @@ function ProductTable(props){
                 </tr>
                 
                 {
-                    jsonData.products.map((product)=>{
+                    jsonData.products.map((product,index)=>{
                         // console.log(product)
-                        return <Category text={props.compareText} isChecked={props.showInStock} data={product}/>   
+                        return <Category text={props.compareText} key = {index} isChecked={props.showInStock} data={product}/>   
                     } 
                     )
                 }

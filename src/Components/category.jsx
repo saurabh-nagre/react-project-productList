@@ -1,4 +1,4 @@
-import data from './data.json'
+
 import ProductItem from './productItem'
 
 function Category(props){
@@ -10,10 +10,10 @@ function Category(props){
             </tr>
 
             {
-                props.data.items.map((item)=>
+                props.data.items.map((item,index)=>
                 {   
                     // console.log(props.isChecked)
-                    return ((!props.isChecked || (props.isChecked && item.instock)) && item.name.toLowerCase().startsWith(props.text.toLowerCase())) && <tr><ProductItem info={item} /></tr>
+                    return ((!props.isChecked || (props.isChecked && item.instock)) && item.name.toLowerCase().startsWith(props.text.toLowerCase())) && <tr><ProductItem key = {index} info={item} /></tr>
                 }
                 )
             }
