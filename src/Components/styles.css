@@ -1,0 +1,12 @@
+.checkbox{
+    float: left;
+    width: fit-content;
+}
+
+.paraDark{
+    font-weight: bold;
+}
+
+.out-of-stock{
+    color: #ff0000;
+}

@@ -1,0 +1,25 @@
+.input{
+    width: 96%;
+    margin-bottom: 10px;
+    padding: 2%;
+    margin-inline: auto;
+}
+.error{
+    color:#ff0000;
+    font-size: small;
+}
+
+.submit{
+    padding: 10px;
+    font-size: medium;
+    font-weight:600;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #df954c;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.submit:hover{
+    background-color: #f0caa4;
+}
